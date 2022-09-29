@@ -1,0 +1,31 @@
+{
+  "name": "f8-express-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test speified\" && exit 1 "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letrongminh/nodejs-learning.git"
+  },
+  "keywords": [
+    "learning",
+    "backend",
+    "nodejs"
+  ],
+  "author": "minhle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/letrongminh/nodejs-learning/issues"
+  },
+  "homepage": "https://github.com/letrongminh/nodejs-learning#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
