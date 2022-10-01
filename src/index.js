@@ -6,29 +6,15 @@ var handlebars = require('express-handlebars');
 
 const app = express();
 
+const routes = require('./router/index.js');
+
+
 app.engine('handlebars', handlebars.engine());
 app.set('view engine', 'handlebars');
-
 app.set('views', path.join(__dirname, 'resources/views'));
 
 
-app.get('/', (req, res) => {
-    res.render('home');
-});
- 
+routes(app);
 
-app.get('/news', (req, res) => {
-  res.render('news');
-});
-
-
-app.get('/search', (req, res) => {
-  res.render('search');
-});
-
-
-app.post('/search', (req, res) => {
-  res.send('-----');
-});
 
 app.listen(3000);
