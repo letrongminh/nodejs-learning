@@ -2,9 +2,10 @@
   "name": "f8-express-01",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
+  
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon --inspect src/index.js",
     "test": "echo \"Error: no test speified\" && exit 1 "
   },
   "repository": {
@@ -23,7 +24,8 @@
   },
   "homepage": "https://github.com/letrongminh/nodejs-learning#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
